@@ -8,7 +8,7 @@ type College = {
   location: string;
   fees: number;
   rating: number;
-  placements: string;
+  avgPackage: number;
 };
 
 export default function CompareSelector({
@@ -89,8 +89,8 @@ export default function CompareSelector({
 
             <tr>
               <td className="border p-3">Placements</td>
-              <td className="border p-3">{first.placements}</td>
-              <td className="border p-3">{second.placements}</td>
+              <td className="border p-3">₹{first.avgPackage}</td>
+              <td className="border p-3">₹{second.avgPackage}</td>
             </tr>
           </tbody>
         </table>
