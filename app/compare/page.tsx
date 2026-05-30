@@ -76,7 +76,7 @@ export default async function ComparePage({
             <td className="border p-3">Placements</td>
             {colleges.map((college) => (
               <td key={college.id} className="border p-3">
-                {college.placements}
+                ₹{college.avgPackage.toLocaleString()}
               </td>
             ))}
           </tr>
